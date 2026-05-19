@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-fun-yellow: #FFD166;
+  --color-fun-red: #EF476F;
+  --color-fun-blue: #118AB2;
+  --color-fun-green: #06D6A0;
+  --color-fun-navy: #073B4C;
+  --color-fun-pink: #FF99C8;
+  --color-fun-purple: #B5179E;
+  --color-fun-bg: #F8F9FA;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-fun-bg)] text-[var(--color-fun-navy)] antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn-bounce {
+    @apply transition-transform active:scale-95 hover:scale-105;
+  }
+}
+
