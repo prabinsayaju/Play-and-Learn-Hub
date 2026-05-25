@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'motion/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Home from './pages/Home';
 import MathGame from './pages/MathGame';
 import MemoryGame from './pages/MemoryGame';
@@ -40,6 +41,7 @@ export default function App() {
           </Routes>
         </AnimatePresence>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
